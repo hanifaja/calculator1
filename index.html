@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="dist/output.css">
+
+</head>
+<body>
+    <div class="min-h-screen bg-pink-500 flex items-center justify-center">
+        <div class="bg-gray-800 border-2 border-gray-900 shadow-2xl rounded-lg">
+         <form class="border-b-2 border-gray-900" name="form">
+             <input type="text" class="bg-transparent p-6 rounded-lg focus:bg-gray-700 text-3xl text-right text-white font-mono" name="display">
+         </form>
+         <div class="p-6 text-gray-800 gap-4 text-xl">
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert('/')">/</button>  
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert('*')">*</button>  
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert('+')">+</button>  
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert('-')">-</button>  
+         </div>
+         <div class="p-6 text-gray-800 gap-4 text-xl">
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert(7)">7</button>
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert(8)">8</button>
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert(9)">9</button>
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="CE()">CE</button>
+         </div>
+         <div class="p-6 text-gray-800 gap-4 text-xl">
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert(4)">4</button>
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert(5)">5</button>
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert(6)">6</button>
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="C()">C</button>
+         </div>
+         <div class="p-6 text-gray-800 gap-4 text-xl">
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert(1)">1</button>
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert(2)">2</button>
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert(3)">3</button>
+             <button class="font-mono bg-pink-500 rounded-lg p-5 mx-5" onclick="hasil1()">=</button>
+         </div>
+         <div class="p-1 text-gray-800 gap-4 text-xl justify-center items-center text-center">
+             <button class="font-mono bg-blue-500 hover:bg-blue-400 rounded-lg p-5 mx-5" onclick="insert(0)">0</button>
+         </div>
+        </div>
+       </div>
+       <script src="java.js"></script>
+</body>
+</html>
